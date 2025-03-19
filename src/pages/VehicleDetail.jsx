@@ -33,15 +33,15 @@ export const VehicleDetail = () => {
 
     }, []);
     return (
-        <div className="container justify-content-center text-align-center">
+        <div className="container">
             <div className="card mb-3">
                 <div className="row g-0">
-                    <div className="col-md-4">
+                    <div className="col-md-5">
                         <img src={imageUrl} className="img-fluid rounded-start" alt="..." />
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-7">
                         <div className="card-body">
-                            <h5 className="card-title">{vehicle.properties?.name}</h5>
+                            <h3 className="card-title text-center mb-5">{vehicle.properties?.name}</h3>
                             <p className="card-text">{vehicle.description} <br/>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minus nihil impedit a ducimus maiores vitae ipsam, fugit est eveniet delectus dolorem commodi recusandae magnam saepe quae expedita. Harum dolor sed quo magnam repellat, consequuntur ducimus illo ab fugit corporis, suscipit, aperiam nam error vel quia alias aspernatur nostrum dicta!</p>
                         </div>
@@ -50,7 +50,7 @@ export const VehicleDetail = () => {
             </div>
             <div className="container text-danger ">
                 <hr/>
-                <table className="table table-borderless text-danger">
+                <table className="table table-borderless text-center text-danger mx-auto">
                     <thead className='text-danger'>
                         <tr className='text-danger'>
                             <th className='text-danger'>

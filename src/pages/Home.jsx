@@ -73,7 +73,7 @@ export const Home = () => {
 
 	}, []);
 	return (
-		<div className="container text mt-5">
+		<div className="container text mt-5 mb-5">
 
 			<h2 className="text-danger">Characters</h2>
 			<div className="scroll-container mt-5">
@@ -84,7 +84,7 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<h2 className="text-danger">Planets</h2>
+			<h2 className="text-danger mt-5">Planets</h2>
 			<div className="scroll-container mt-5">
 				<div className="d-flex flex-row overflow-x-auto">
 					{store.planets.map((item, index) => {
@@ -93,7 +93,7 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<h2 className="text-danger">Vehicles</h2>
+			<h2 className="text-danger mt-5">Vehicles</h2>
 			<div className="scroll-container mt-5">
 				<div className="d-flex flex-row overflow-x-auto">
 					{store.vehicles.map((item,index)=>{

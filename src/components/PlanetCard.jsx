@@ -41,13 +41,13 @@ const PlanetCard = ({ item }) => {
         <div className="container">
             <div className="card" style={{ width: "18rem" }}>
                 <img src={imagenUrl} className="card-im-top" alt={item.name} style={{ height: '200px' }} />
-                <div className="card-body">
+                <div className="card-body" style={{ height: '200px' }}>
                     <h5 className="card-title">{item.name}</h5>
-                    <p className="card-text">Population: {planet.population}</p>
-                    <p className="card-text">Terrain: {planet.terrain}</p>
+                    <p className="card-text text-nowrap">Population: {planet.population}</p>
+                    <p className="card-text text-nowrap">Terrain: {planet.terrain}</p>
                     <div className="d-flex justify-content-between align-items-center">
-                        <Link to={`/planet/${item.uid}`} className='btn btn-primary'>Learn more!</Link>
-                        <i className={`fa-heart ${isFavorite ? 'fa-solid text-danger' : 'fa-regular text-dark'}`}
+                        <Link to={`/planet/${item.uid}`} className='btn btn-outline-primary custom-btn'>Learn more!</Link>
+                        <i className={`fa-heart ${isFavorite ? 'fa-solid text-warning' : 'fa-regular custom-heart text-warning'}`}
                             onClick={checkFavorite} style={{ cursor: 'pointer', fontSize: '1.5rem' }}>
                         </i>
                     </div>
